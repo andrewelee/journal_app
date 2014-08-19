@@ -1,0 +1,9 @@
+<h2>Post Titles</h2>
+<ul>
+<% posts.each(function(post) { %>
+  <li><a href="#/" class="show" data-id="<%= post.id %>" >
+   <%= post.get("title") %>
+  </a></li>
+  <button class="delete" data-id="<%= post.id %>">Delete</button>
+<% }); %>
+</ul>
